@@ -4,6 +4,7 @@
 
 A CRUD implementation using Sequelize in Express. Unit tests and integration tests are written using Jest.
 
+
 **Front end**: https://crm-crud.herokuapp.com/customers
 
 ## Built With
@@ -11,8 +12,13 @@ A CRUD implementation using Sequelize in Express. Unit tests and integration tes
 - [Bootstrap v5.0](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 - [Express](https://expressjs.com/)
 - [Jest](https://jestjs.io/)
-- [SQLite](https://www.sqlite.org/index.html)
+- [Postgres](https://www.sqlite.org/index.html)
 - [Sequelize ORM](https://sequelize.org/)
+
+Additional packages used in project as dependencies:
+ - supertest (for endpoint integration tests)
+ - @types/jest (to enable jest autocomplete) 
+ - jest-html-reporter (to provide generated test execution html report )
 
 ## Getting Started
 
@@ -31,7 +37,7 @@ This is an example of how to list things you need to use the software and how to
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/minhajul-karim/crud-sequelize.git
+   git clone https://github.com/agilathon/integration_unit_test_demo.git
    ```
 2. Install NPM packages
    ```sh
