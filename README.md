@@ -2,14 +2,11 @@
 
 # Introduction
 
-A CRUD implementation using Sequelize in Express. Unit tests and integration tests are written using Jest.
+A CRUD endpoint implementation using Sequelize in Express. Unit tests and integration tests are written using Jest.
 
-
-**Front end**: https://crm-crud.herokuapp.com/customers
 
 ## Built With
 
-- [Bootstrap v5.0](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 - [Express](https://expressjs.com/)
 - [Jest](https://jestjs.io/)
 - [Postgres](https://www.sqlite.org/index.html)
