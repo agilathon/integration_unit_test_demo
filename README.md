@@ -39,11 +39,24 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    git clone https://github.com/agilathon/integration_unit_test_demo.git
    ```
-2. Install NPM packages
+2. Run the docker-compose.yaml to start progres instance 
+   ```sh
+   docker compose up
+   ```
+
+3. Install NPM packages
    ```sh
    npm install
    ```
-3. Run server with
+
+3. Migrate db models and seed data to postgres:
+   ```sh
+   npx sequelize-cli db:migrate
+   npx sequelize-cli db:seed:all
+   ```
+
+
+4. Run server with
    ```sh
    npm start
    ```
