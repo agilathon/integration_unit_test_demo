@@ -13,7 +13,9 @@
     "linebreak-style": 0,
     "object-curly-newline": ["error", { "multiline": true }],
     "no-undef": "off",
-    "no-unused-vars": "warn"
+    "no-unused-vars": "warn",
+    "max-len":"off"
+
   },
   "plugins": ["prettier"]
 }

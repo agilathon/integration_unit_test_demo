@@ -1,4 +1,3 @@
-[![Node.js CI](https://github.com/minhajul-karim/crud-sequelize/actions/workflows/node.js.yml/badge.svg)](https://github.com/minhajul-karim/crud-sequelize/actions/workflows/node.js.yml)
 
 # Introduction
 
@@ -17,6 +16,21 @@ Additional packages used in project as dependencies:
  - @types/jest (to enable jest autocomplete) 
  - jest-html-reporter (to provide generated test execution html report )
 
+**Note:**
+For test report generation it is neccesary to define jest.config in project *root*
+with content:
+
+   ```sh
+   {
+      "reporters": [
+         "default",
+         ["./node_modules/jest-html-reporter", {
+               "pageTitle": "Test Report"
+         }]
+      ]
+      }
+   ```
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
@@ -25,7 +39,6 @@ To get a local copy up and running follow these simple example steps.
 
 This is an example of how to list things you need to use the software and how to install them.
 
-- npm
   ```sh
   npm install npm@latest -g
   ```

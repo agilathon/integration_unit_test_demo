@@ -2,7 +2,7 @@
   "name": "crud-with-sequelize",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "migrate:up": "npx sequelize-cli db:migrate",
     "migrate:undo": "npx sequelize-cli db:migrate:undo",
@@ -14,7 +14,6 @@
     "dev": "npx nodemon server.js",
     "test:sync": "jest --runInBand",
     "test": "jest --coverage"
-    
   },
   "keywords": [],
   "author": "",

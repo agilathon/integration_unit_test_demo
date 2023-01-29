@@ -1,16 +1,10 @@
-/*
- * Title: Project Initial File
- * Description: Initial file to start the application
- * Author: Minhajul Karim
- * Date: 4 Aug 2021
- */
-
 // Dependencies
 const express = require('express');
 const exphbs = require('express-handlebars');
 const customerRouter = require('./routes/customers');
 
 const app = express();
+app.use(express.json());
 
 // Handlebars settings
 app.engine('handlebars', exphbs());

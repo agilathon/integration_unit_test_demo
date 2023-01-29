@@ -1,10 +1,3 @@
-/*
- * Title: Application tests
- * Description: Test suites for the application
- * Author: Minhajul Karim
- * Date: 9 Aug 2021
- */
-
 // Dependencies
 const supertest = require('supertest');
 const app = require('../app');
