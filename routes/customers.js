@@ -1,7 +1,5 @@
 // Dependencies
 const express = require('express');
-const { Op } = require('sequelize');
-const { getUsersInfo } = require('../utils/utils');
 const custommerController = require('../controllers/customerController');
 
 // TODO: ASYNC ERROR HANDLE
@@ -27,5 +25,23 @@ router.get('/:userId/remove', custommerController.remove);
 
 // // Search information
 router.get('/search/', custommerController.search);
+
+/// json block
+
+router.get('/json', custommerController.getAllJson);
+
+// // Create new user
+router.post('/json/add', custommerController.addJson);
+
+// // Update existing user
+router.get('/json/:userId/update', custommerController.updateJson);
+
+// // Remove users
+router.get('/json/:userId/remove', custommerController.removeJson);
+
+// // Search information
+router.get('/json/search/', custommerController.searchJson);
+
+/// json block
 
 module.exports = router;

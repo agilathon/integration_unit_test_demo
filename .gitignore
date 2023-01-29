@@ -123,8 +123,4 @@ dist
 .pnp.*
 
 # generated test report
-test-report.html 
-
-
-
-
+test-report.html

@@ -1,11 +1,10 @@
-
-
 // Dependencies
 const express = require('express');
 const exphbs = require('express-handlebars');
 const customerRouter = require('./routes/customers');
 
 const app = express();
+app.use(express.json());
 
 // Handlebars settings
 app.engine('handlebars', exphbs());
