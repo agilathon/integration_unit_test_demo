@@ -1,9 +1,4 @@
-/*
- * Title: Project Initial File
- * Description: Initial file to start the application
- * Author: Minhajul Karim
- * Date: 4 Aug 2021
- */
+
 
 // Dependencies
 const express = require('express');
