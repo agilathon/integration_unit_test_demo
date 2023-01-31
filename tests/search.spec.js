@@ -1,10 +1,3 @@
-/*
- * Title: Test search
- * Description: Test suites for the search functionality
- * Author: Minhajul Karim
- * Date: 15 Aug 2021
- */
-
 // Dependencies
 const supertest = require('supertest');
 const app = require('../app');

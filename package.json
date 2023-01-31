@@ -2,7 +2,7 @@
   "name": "crud-with-sequelize",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "migrate:up": "npx sequelize-cli db:migrate",
     "migrate:undo": "npx sequelize-cli db:migrate:undo",
@@ -13,8 +13,8 @@
     "start": "node server.js",
     "dev": "npx nodemon server.js",
     "test:sync": "jest --runInBand",
-    "test": "jest --coverage"
-    
+    "test": "jest --coverage",
+    "generate-swagger": "node swagger.js"
   },
   "keywords": [],
   "author": "",
@@ -24,7 +24,8 @@
     "express": "^4.17.1",
     "express-handlebars": "^5.3.2",
     "pg": "^8.8.0",
-    "sequelize": "^6.6.5"
+    "sequelize": "^6.6.5",
+    "swagger-ui-express": "^4.6.0"
   },
   "devDependencies": {
     "@types/jest": "^26.0.24",
@@ -37,7 +38,8 @@
     "jest-html-reporter": "^3.7.0",
     "prettier": "^2.3.2",
     "sequelize-cli": "^6.2.0",
-    "supertest": "^6.1.4"
+    "supertest": "^6.1.4",
+    "swagger-autogen": "^2.23.0"
   },
   "engines": {
     "node": "16.x"

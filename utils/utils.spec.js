@@ -1,9 +1,3 @@
-/*
- * Title: Utility tests
- * Description: Test suites for utility functions
- * Author: Minhajul Karim
- * Date: 9 Aug 2021
- */
 
 // Dependencies
 const { getUsersInfo } = require('./utils');
