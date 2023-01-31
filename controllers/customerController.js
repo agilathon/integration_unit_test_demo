@@ -4,6 +4,7 @@ const { getUsersInfo } = require('../utils/utils');
 const { ValidationError } = require('../utils/customErrors');
 
 async function getAll(req, res) {
+    // #swagger.ignore = true
     let users;
     try {
         users = await db.User.findAll();
@@ -18,6 +19,7 @@ async function getAll(req, res) {
 }
 
 async function add(req, res) {
+    // #swagger.ignore = true
     const { id, name, email, phone } = req.body;
     const errorMsgs = [];
     if (!name) errorMsgs.push({ message: 'Please provie your name' });
@@ -58,6 +60,7 @@ async function add(req, res) {
 }
 
 async function update(req, res) {
+    // #swagger.ignore = true
     // Retrieve userId from URL
     const { userId } = req.params;
     // Find the user with userId
@@ -73,6 +76,7 @@ async function update(req, res) {
 }
 
 async function remove(req, res) {
+    // #swagger.ignore = true
     // Retrieve userId from URL
     const { userId } = req.params;
     // Delete user
@@ -81,6 +85,7 @@ async function remove(req, res) {
 }
 
 async function search(req, res) {
+    // #swagger.ignore = true
     const { q } = req.query;
     let users;
     try {
@@ -99,6 +104,7 @@ async function search(req, res) {
     const allUsers = getUsersInfo(users);
     res.render('home', { users: allUsers });
 }
+
 // json block
 async function getAllJson(req, res) {
     let users;
@@ -152,6 +158,14 @@ async function addJson(req, res) {
 }
 
 async function updateJson(req, res) {
+    /* #swagger.responses[200] = {
+        description: 'Some description...',
+        schema: {
+            name: 'Jhon Doe',
+            age: 29,
+            about: ''
+        }
+    } */
     // Retrieve userId from URL
     let user = req.body;
     // Find the user with userId
